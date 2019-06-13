@@ -57,8 +57,8 @@ class Game extends React.Component {
             const desc = move ? "Aller à l'étape #" + move : "Aller à la situation initiale";
             // Desc contient la description à afficher à l'écran sur le bouton à enclencher pour voyager dans le temps. A chaque appui sur le bouton on demande l'état du Board au numéro de MOVE demandé.
             return (
-                <li>
-                    <button onClick={ ()=> this.jumpTo(move)}>{desc}</button>
+                <li key={move}>
+                    <button onClick={()=> this.jumpTo(move)}>{desc}</button>
                 </li>
             )
         });

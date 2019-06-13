@@ -3,7 +3,7 @@ import React from 'react';
 class Clock extends React.Component{
     // Première fonction qui execute pour créer le premier composant --> C'est celle qui le construit
     constructor(props){
-        super(props)
+        super(props);
         this.state={
             date: new Date()
         };
